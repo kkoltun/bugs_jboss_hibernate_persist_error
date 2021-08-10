@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema">
+
+	<datasource jta="true" jndi-name="java:/simple" pool-name="simple" enabled="true">
+		<connection-url>jdbc:postgresql://localhost:5432/simple_database</connection-url>
+		<driver>postgresql</driver>
+		<security>
+			<user-name>sa</user-name>
+			<password>password</password>
+		</security>
+	</datasource>
+</datasources>
