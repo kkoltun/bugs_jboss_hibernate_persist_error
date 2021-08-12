@@ -2,11 +2,11 @@
 <datasources xmlns="http://www.jboss.org/ironjacamar/schema">
 
 	<datasource jta="true" jndi-name="java:/simple" pool-name="simple" enabled="true">
-		<connection-url>jdbc:mssql://localhost:1433;databaseName=simple_database</connection-url>
+		<connection-url>jdbc:sqlserver://localhost:1433;databaseName=simple_database</connection-url>
 		<driver>mssql</driver>
 		<security>
 			<user-name>sa</user-name>
-			<password>password</password>
+			<password>p@ssw0rd543</password>
 		</security>
 	</datasource>
 </datasources>

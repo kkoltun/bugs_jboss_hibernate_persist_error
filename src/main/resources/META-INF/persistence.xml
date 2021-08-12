@@ -8,8 +8,9 @@
     <persistence-unit name="simple-pu" transaction-type="JTA">
         <jta-data-source>java:/simple</jta-data-source>
         <properties>
-<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2012Dialect"/>-->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <!-- Choose the right dialect to the DB used -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2012Dialect"/>
+            <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>-->
             <!-- Commenting this property out makes persisting work -->
             <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform" />
         </properties>
